@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/eliassymons/static/css/main.cc77dbc0.css",
+    "main.js": "/eliassymons/static/js/main.30734c52.js",
+    "static/media/github.png": "/eliassymons/static/media/github.1ea0edcf65829af537c7.png",
+    "static/media/instagram.png": "/eliassymons/static/media/instagram.43d3f23fc6ca28025a90.png",
+    "index.html": "/eliassymons/index.html",
+    "main.cc77dbc0.css.map": "/eliassymons/static/css/main.cc77dbc0.css.map",
+    "main.30734c52.js.map": "/eliassymons/static/js/main.30734c52.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc77dbc0.css",
+    "static/js/main.30734c52.js"
+  ]
+}
