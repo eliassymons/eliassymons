@@ -7,8 +7,13 @@ export default function About() {
           <p>
             Since graduating with a degree in Piano Performance and Composition
             in 2015, I've taught piano and scored music for commercials, short
-            films, runway shows, and feature films. Check out some of my work
-            here.
+            films, runway shows, and feature films. Check out some of my work{" "}
+            <a
+              href="https://www.imdb.com/name/nm7650734/?ref_=nv_sr_srsg_0"
+              className="imdb-link"
+            >
+              here.
+            </a>
           </p>
           <p>
             Last year, I decided it was time for a change. I wanted to pursue a

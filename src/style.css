@@ -11084,9 +11084,13 @@ p {
 .hero .btn {
   background-color: transparent;
   color: #060607;
-  border-color: #060607;
+  border-color: #eff6e0;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.hero .scroll-link {
+  text-decoration: none;
+  color: #eff6e0;
 }
 .hero .btn:hover {
   background-color: transparent;
@@ -11104,6 +11108,9 @@ p {
 }
 .about h2, .about .h2 {
   text-align: center;
+}
+.about .imdb-link {
+  color: #eff6e0;
 }
 .about .about-info {
   width: 85vw;
