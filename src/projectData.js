@@ -4,7 +4,7 @@ const projects = [
     description:
       "Petsy is an app modeled after the Kahoots (pet feed store) website.",
     link: "https://eliassymons.github.io/petsy/",
-    code: "https://github.com/eliassymons/petsy",
+    code: "https://github.com/eliassymons/petsy/tree/master",
     image: "/images/petsy-img.jpg",
   },
   {
@@ -12,7 +12,7 @@ const projects = [
     description:
       "Menu and Shopping cart functionality for a fictitious pizza company.",
     link: "https://eliassymons.github.io/socal-pizza/",
-    code: "https://github.com/eliassymons/socal-pizza",
+    code: "https://github.com/eliassymons/socal-pizza/tree/master",
     image: "/images/socal-pizza-img.jpg",
   },
   {
@@ -20,7 +20,7 @@ const projects = [
     description:
       "A website for retrieving basic information and images from National Parks.",
     link: "https://eliassymons.github.io/national-parks/",
-    code: "https://github.com/eliassymons/national-parks",
+    code: "https://github.com/eliassymons/national-parks/tree/master",
     image: "/images/national-park-img.jpg",
   },
   {
