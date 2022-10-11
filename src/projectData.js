@@ -1,5 +1,13 @@
 const projects = [
   {
+    name: "Netboox",
+    description:
+      "A website that features books from the NYT beststeller list, with a Netflix inspired UI.",
+    link: "https://eliassymons.github.io/netboox/",
+    code: "https://github.com/eliassymons/netboox/tree/master",
+    image: "/images/netboox-img.jpg",
+  },
+  {
     name: "Petsy",
     description:
       "Petsy is an app modeled after the Kahoots (pet feed store) website.",
