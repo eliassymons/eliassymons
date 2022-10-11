@@ -17,7 +17,7 @@ function CollapsibleExample() {
             smooth={true}
             offset={-100}
             duration={500}
-            delay={1000}
+            delay={300}
           >
             ES
           </Link>
@@ -33,7 +33,7 @@ function CollapsibleExample() {
               smooth={true}
               offset={-200}
               duration={500}
-              delay={1000}
+              delay={300}
             >
               About
             </Link>
@@ -46,7 +46,7 @@ function CollapsibleExample() {
               smooth={true}
               offset={-100}
               duration={500}
-              delay={1000}
+              delay={300}
             >
               Projects
             </Link>
@@ -59,7 +59,7 @@ function CollapsibleExample() {
               smooth={true}
               offset={0}
               duration={500}
-              delay={1000}
+              delay={300}
             >
               Contact
             </Link>
