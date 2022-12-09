@@ -10936,22 +10936,20 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: #124559;
-  background-image: linear-gradient(180deg, #124559 25%, #aec3b0 100%);
-  background-attachment: fixed;
+  background-color: #000;
   font-family: "Inter Tight", sans-serif;
 }
 
 h1, .h1 {
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 4rem;
-  color: #060607;
+  color: #f9f9f9;
 }
 
 h2, .h2 {
   font-size: 4rem;
-  font-family: "Alfa Slab One", cursive;
-  color: #eff6e0;
+  font-family: "Bebas Neue", cursive;
+  color: #8db4ce;
 }
 
 p {
@@ -11016,43 +11014,91 @@ p {
     opacity: 1;
   }
 }
+.nav {
+  background-color: #00000c;
+}
+
+.offcanvas-header {
+  background-color: #00000c;
+}
+.offcanvas-header .btn-close {
+  background-color: white;
+}
+
+.offcanvas-body {
+  background-color: #00000c;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+}
+.offcanvas-body .navbar-nav {
+  gap: 3rem;
+  width: 100%;
+}
+
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
-  height: 8vh;
-  background-color: #124559;
-  color: #36454f;
-  z-index: 9999;
+  height: 10vh;
+  background-color: rgba(0, 0, 12, 0.4431372549);
 }
-.navbar .nav-collapse {
-  background-color: #124559;
+.navbar .navbar-nav {
+  background-color: #00000c;
+  display: flex;
+  gap: 2rem;
+  justify-content: flex-end;
+  padding-right: 2rem;
 }
-.navbar .scroll-link {
+
+.scroll-link {
   text-decoration: none;
-  color: #eff6e0;
-  margin-left: 2rem;
+  color: #8db4ce;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(currentColor, currentColor) bottom/0 0.1em no-repeat;
+  transition: 0.4s ease background-size;
   cursor: pointer;
 }
-.navbar .scroll-link:active {
+
+.scroll-link:active {
   text-decoration: none;
 }
-.navbar .nav-brand {
-  font-family: "Alfa Slab One", cursive;
-  font-size: 2rem;
-  color: #060607;
+
+.scroll-link:hover {
+  background-size: 100% 0.1em;
+  color: #f9f9f9;
+}
+
+.nav-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: #6c6f75;
   text-decoration: none;
+  transition: all 0.2s ease;
+  padding-left: 1rem;
   cursor: pointer;
 }
-.navbar .nav-container {
+
+.nav-brand:hover {
+  color: #f9f9f9;
+}
+
+.nav-container {
   display: flex;
 }
-.navbar .nav-container .nav-link {
+.nav-container .nav-link {
   font-size: 1.2rem;
   font-weight: 500;
   color: #eff6e0;
+}
+
+.navbar-toggler {
+  border: none;
 }
 
 .hero {
@@ -11061,25 +11107,28 @@ p {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 92vh;
-  gap: 3rem;
+  height: 90vh;
+  gap: 2rem;
   padding-bottom: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
-  color: #36454f;
+  color: #6c6f75;
+}
+.hero h1, .hero .h1 {
+  color: #8db4ce;
 }
 .hero .hero-name {
-  color: #eff6e0;
+  color: #f9f9f9;
   -webkit-animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  font-size: 4rem;
 }
 .hero .hero-desc {
   -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
-  text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1), 10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+  font-size: 2.5rem;
 }
 .hero .btn {
   background-color: transparent;
@@ -11094,7 +11143,6 @@ p {
 }
 .hero .btn:hover {
   background-color: transparent;
-  text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
 }
 
 .about {
@@ -11150,23 +11198,23 @@ p {
   scale: 101%;
 }
 .projects .card {
-  background-color: #eff6e0;
-  border-radius: 0.8rem;
+  background-color: #8db4ce;
+  border-radius: 0.4rem;
   transition: all 0.2s ease;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  border: 1px solid #36454f;
+  border: 1px solid #6c6f75;
 }
 .projects .card .card-title {
   border-bottom: 1px solid #060607;
   margin-bottom: 1rem;
-  color: #060607;
+  color: #0c1c33;
 }
 .projects .card .card-img {
   height: 15rem;
   width: 18rem;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 0.8rem;
+  border-radius: 0.4rem;
   border: 1px solid transparent;
 }
 .projects .card .card-desc {
@@ -11244,5 +11292,5 @@ p {
 }
 .icons .social-icon {
   width: 2rem;
-  filter: invert(19%) sepia(26%) saturate(1558%) hue-rotate(153deg) brightness(100%) contrast(89%);
+  filter: invert(72%) sepia(32%) saturate(314%) hue-rotate(161deg) brightness(91%) contrast(88%);
 }

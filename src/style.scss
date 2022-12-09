@@ -7,23 +7,26 @@
 }
 
 body {
-  background-color: #124559;
-  background-image: linear-gradient(180deg, #124559 25%, #aec3b0 100%);
-  background-attachment: fixed;
+  background-color: $black;
+
   font-family: "Inter Tight", sans-serif;
 }
 
-$gray: #36454f;
+$gray: #6c6f75;
+$black: #00000c;
+$blue: #0c1c33;
+$white: #f9f9f9;
+$lightBlue: #8db4ce;
 
 h1 {
-  font-family: "Alfa Slab One", cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 4rem;
-  color: #060607;
+  color: $white;
 }
 h2 {
   font-size: 4rem;
-  font-family: "Alfa Slab One", cursive;
-  color: #eff6e0;
+  font-family: "Bebas Neue", cursive;
+  color: $lightBlue;
 }
 p {
   font-size: 1.4rem;
@@ -98,74 +101,113 @@ p {
     opacity: 1;
   }
 }
+.nav {
+  background-color: $black;
+}
+.offcanvas-header {
+  background-color: $black;
+  .btn-close {
+    background-color: white;
+  }
+}
+.offcanvas-body {
+  background-color: $black;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  text-align: center;
 
+  gap: 2rem;
+  .navbar-nav {
+    gap: 3rem;
+    width: 100%;
+  }
+}
 .navbar {
   position: sticky;
 
   top: 0;
   backdrop-filter: blur(5px);
-  height: 8vh;
-  background-color: #124559;
+  height: 10vh;
+  background-color: #00000c71;
 
-  color: $gray;
-  z-index: 9999;
-  .nav-collapse {
-    background-color: #124559;
-  }
-  .scroll-link {
-    text-decoration: none;
-    color: #eff6e0;
-    margin-left: 2rem;
-    cursor: pointer;
-  }
-  .scroll-link:active {
-    text-decoration: none;
-  }
-  .nav-brand {
-    font-family: "Alfa Slab One", cursive;
-    font-size: 2rem;
-    color: #060607;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  .nav-container {
+  .navbar-nav {
+    background-color: $black;
     display: flex;
-
-    .nav-link {
-      font-size: 1.2rem;
-      font-weight: 500;
-      color: #eff6e0;
-    }
+    gap: 2rem;
+    justify-content: flex-end;
+    padding-right: 2rem;
   }
 }
+.scroll-link {
+  text-decoration: none;
+  color: $lightBlue;
+  font-size: 1.2rem;
+  font-weight: 800;
+  background: linear-gradient(currentColor, currentColor) bottom / 0 0.1em
+    no-repeat;
+  transition: 0.4s ease background-size;
+  cursor: pointer;
+}
+.scroll-link:active {
+  text-decoration: none;
+}
+.scroll-link:hover {
+  background-size: 100% 0.1em;
+  color: $white;
+}
+.nav-brand {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3rem;
+  color: $gray;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+.nav-brand:hover {
+  color: $white;
+}
+.nav-container {
+  display: flex;
 
+  .nav-link {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #eff6e0;
+  }
+}
+.navbar-toggler {
+  border: none;
+}
 .hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 92vh;
-  gap: 3rem;
+  height: 90vh;
+  gap: 2rem;
 
   padding-bottom: 5rem;
   padding-right: 2rem;
   padding-left: 2rem;
   color: $gray;
+  h1 {
+    color: $lightBlue;
+  }
   .hero-name {
-    color: #eff6e0;
+    color: $white;
     -webkit-animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation: fade-in 0.9s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-      10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+    font-size: 4rem;
   }
   .hero-desc {
     -webkit-animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1)
       both;
     animation: fade-in-right 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
     animation-delay: 0.6s;
-    text-shadow: 0px 15px 5px rgba(0, 0, 0, 0.1),
-      10px 20px 5px rgba(0, 0, 0, 0.05), -10px 20px 5px rgba(0, 0, 0, 0.05);
+    font-size: 2.5rem;
   }
   .btn {
     background-color: transparent;
@@ -182,8 +224,6 @@ p {
   }
   .btn:hover {
     background-color: transparent;
-    text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff,
-      0 0 60px #fff, 0 0 70px #fff, 0 0 80px #fff;
   }
 }
 
@@ -240,8 +280,8 @@ p {
     scale: 101%;
   }
   .card {
-    background-color: #eff6e0;
-    border-radius: 0.8rem;
+    background-color: $lightBlue;
+    border-radius: 0.4rem;
     transition: all 0.2s ease;
 
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -250,13 +290,13 @@ p {
     .card-title {
       border-bottom: 1px solid #060607;
       margin-bottom: 1rem;
-      color: #060607;
+      color: $blue;
     }
     .card-img {
       height: 15rem;
       width: 18rem;
       object-fit: cover;
-      border-radius: 0.8rem;
+      border-radius: 0.4rem;
       border: 1px solid transparent;
     }
     .card-desc {
@@ -334,7 +374,7 @@ p {
 
   .social-icon {
     width: 2rem;
-    filter: invert(19%) sepia(26%) saturate(1558%) hue-rotate(153deg)
-      brightness(100%) contrast(89%);
+    filter: invert(72%) sepia(32%) saturate(314%) hue-rotate(161deg)
+      brightness(91%) contrast(88%);
   }
 }
