@@ -1,5 +1,20 @@
 const projects = [
   {
+    name: "NoCo Pet Doors",
+    description:
+      "A website for a Northern Colorado pet door installation business",
+    link: "https://nocopetdoors.com",
+    code: "https://github.com/eliassymons/noco-pet-doors/tree/master",
+    image: "/images/echo-info.jpeg",
+  },
+  {
+    name: "Classi Guitarist",
+    description: "A website for a San Diego-based guitar instructor.",
+    link: "https://classiguitarist.netlify.app/",
+    code: "https://github.com/eliassymons/classiguitarist/tree/master",
+    image: "/images/sean-about.jpg",
+  },
+  {
     name: "Netboox",
     description:
       "A website that features books from the NYT beststeller list, with a Netflix inspired UI.",

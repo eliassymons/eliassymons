@@ -4,7 +4,6 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import Icons from "./components/Icons";
 
 function App() {
   return (

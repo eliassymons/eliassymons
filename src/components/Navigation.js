@@ -7,19 +7,19 @@ import { Link } from "react-scroll";
 import React from "react";
 
 function CollapsibleExample() {
-  const [menuOpen, setMenuOpen] = React.useState(false);
-  const toggleMenu = () => {
-    setMenuOpen(!menuOpen);
-  };
-
-  const handleClose = () => setMenuOpen(false);
   const [windowWidth, setWindowWidth] = React.useState(window.innerWidth);
-
   React.useEffect(() => {
     window.addEventListener("resize", function () {
       setWindowWidth(window.innerWidth);
     });
   }, []);
+  const [menuOpen, setMenuOpen] = React.useState(false);
+  const toggleMenu = () => {
+    windowWidth < 992 && setMenuOpen(!menuOpen);
+  };
+
+  const handleClose = () => setMenuOpen(false);
+
   return (
     <Navbar expand="lg" sticky="top" collapseOnSelect variant="dark">
       <Container fluid>
@@ -59,7 +59,7 @@ function CollapsibleExample() {
                 smooth={true}
                 offset={-200}
                 duration={500}
-                onClick={windowWidth < 992 && toggleMenu}
+                onClick={toggleMenu}
               >
                 About
               </Link>
@@ -71,9 +71,9 @@ function CollapsibleExample() {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                onClick={windowWidth < 992 && toggleMenu}
+                onClick={toggleMenu}
               >
-                Projects
+                My Work
               </Link>
 
               <Link
@@ -83,7 +83,7 @@ function CollapsibleExample() {
                 smooth={true}
                 offset={0}
                 duration={500}
-                onClick={windowWidth < 992 && toggleMenu}
+                onClick={toggleMenu}
               >
                 Contact
               </Link>

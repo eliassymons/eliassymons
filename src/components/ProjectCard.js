@@ -14,12 +14,22 @@ function ProjectCard(props) {
         <Card.Text className="card-desc">{props.description}</Card.Text>
         <div className="card-btns">
           <Button variant="light" className="btn">
-            <a className="site-link" href={props.link}>
+            <a
+              className="site-link"
+              href={props.link}
+              target="_blank"
+              rel="noreferrer"
+            >
               Visit Site
             </a>
           </Button>
           <Button variant="light" className="btn">
-            <a className="site-link" href={props.code}>
+            <a
+              className="site-link"
+              href={props.code}
+              target="_blank"
+              rel="noreferrer"
+            >
               {" "}
               View code
             </a>

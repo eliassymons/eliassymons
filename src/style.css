@@ -11018,15 +11018,24 @@ p {
   background-color: #00000c;
 }
 
+.offcanvas {
+  background-color: transparent;
+}
+
 .offcanvas-header {
   background-color: #00000c;
 }
 .offcanvas-header .btn-close {
+  border: none;
   background-color: white;
+  border-radius: 10rem;
+  margin-top: 1rem;
 }
 
 .offcanvas-body {
-  background-color: #00000c;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
   display: flex;
   width: 100%;
   align-items: center;
@@ -11045,10 +11054,10 @@ p {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   height: 10vh;
-  background-color: rgba(0, 0, 12, 0.4431372549);
+  background-color: rgba(0, 0, 12, 0.6117647059);
 }
 .navbar .navbar-nav {
-  background-color: #00000c;
+  background-color: transparent;
   display: flex;
   gap: 2rem;
   justify-content: flex-end;
@@ -11129,13 +11138,30 @@ p {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
   font-size: 2.5rem;
+  border-bottom: 1px solid #f9f9f9;
+  padding-bottom: 2rem;
+}
+.hero .hero-tag p {
+  color: #8db4ce;
+  font-weight: 300;
+  width: 90vw;
+  max-width: 30rem;
+  -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .hero .btn {
   background-color: transparent;
-  color: #060607;
-  border-color: #eff6e0;
+  color: #00000c;
+  border-color: #8db4ce;
   -webkit-animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: fade-in-bottom 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.hero .btn .scroll-link {
+  font-weight: 300;
+  color: #8db4ce;
+}
+.hero .btn .scroll-link:hover {
+  color: #f9f9f9;
 }
 .hero .scroll-link {
   text-decoration: none;
@@ -11172,7 +11198,7 @@ p {
   text-indent: 1.5rem;
 }
 .about p {
-  font-size: 1.2rem;
+  font-weight: 300;
 }
 
 .projects {
@@ -11190,12 +11216,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 90vw;
+  max-width: 60rem;
   gap: 2rem;
   flex-wrap: wrap;
-}
-.projects .card:hover {
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  scale: 101%;
 }
 .projects .card {
   background-color: #8db4ce;
@@ -11205,7 +11229,8 @@ p {
   border: 1px solid #6c6f75;
 }
 .projects .card .card-title {
-  border-bottom: 1px solid #060607;
+  font-family: "Bebas Neue", cursive;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #0c1c33;
 }
@@ -11224,6 +11249,7 @@ p {
   text-align: center;
   width: 16rem;
   border-radius: 2rem;
+  font-weight: 200;
 }
 .projects .card .card-desc:hover {
   color: white;
@@ -11240,11 +11266,14 @@ p {
   gap: 1rem;
 }
 .projects .card .card-body .card-btns .btn {
-  border: 1px solid #124559;
+  border: 1px solid #0c1c33;
   background-color: transparent;
 }
+.projects .card .card-body .card-btns .btn:hover {
+  background-color: #f9f9f9;
+}
 .projects .card .card-body .card-btns a {
-  color: #060607;
+  color: #0c1c33;
   text-decoration: none;
 }
 

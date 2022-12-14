@@ -8,6 +8,14 @@ export default function Hero() {
         <span className="hero-name">Elias Symons</span>
       </h1>
       <h1 className="hero-desc">Web Developer</h1>
+      <div className="hero-tag">
+        <p>Hi, I'm a Front End Developer from San Diego.</p>
+        <p>
+          I'm passionate about creating highly responsive websites with an
+          engaging User Experience.{" "}
+        </p>
+      </div>
+
       <Button className="btn" variant="light">
         <Link
           className="scroll-link"
