@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/eliassymons/static/css/main.6cf13678.css",
+    "main.css": "/eliassymons/static/css/main.de356c94.css",
     "main.js": "/eliassymons/static/js/main.8f0a583f.js",
     "static/media/github.png": "/eliassymons/static/media/github.1ea0edcf65829af537c7.png",
     "index.html": "/eliassymons/index.html",
-    "main.6cf13678.css.map": "/eliassymons/static/css/main.6cf13678.css.map",
+    "main.de356c94.css.map": "/eliassymons/static/css/main.de356c94.css.map",
     "main.8f0a583f.js.map": "/eliassymons/static/js/main.8f0a583f.js.map"
   },
   "entrypoints": [
-    "static/css/main.6cf13678.css",
+    "static/css/main.de356c94.css",
     "static/js/main.8f0a583f.js"
   ]
 }
